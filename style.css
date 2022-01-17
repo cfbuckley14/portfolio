@@ -2,13 +2,28 @@ html {
 	font-size: 10px;
 }
 
-nav {
+.nav-bar {
+	position: relative;
 	display:flex;
 	align-items: center;
 	justify-content: center;
 	gap: 30px;
 	background-color: #5496ff;
 	padding: 20px;
+}
+
+.nav-bar::after { 
+  position:absolute;
+  bottom: -50px;
+  left: 0px;
+  width: 100%;
+  content:" ";
+  background: 
+  radial-gradient(circle at 50% 0%, #5496ff 25%, white 26%, white 40%);
+  background-color: #5496ff ;
+  background-size:40px 100px;
+  height:50px;
+  background-repeat: repeat-x;
 }
 
 .cv-button {
@@ -18,13 +33,14 @@ nav {
 	color: #2866c9;
 	font-family: 'Varela Round', sans-serif;
 	font-weight: bold;
-	font-size: 2rem;
-	padding: 5px;
+	font-size: 3rem;
+	padding: 15px;
 }
 
 .navigation-links {
 	color: #ffffff;
 	text-decoration: none;
 	font-family: 'Varela Round', sans-serif;
-	font-size: 2rem;
+	font-size: 3rem;
 }
+
