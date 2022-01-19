@@ -1,7 +1,8 @@
 html {
 	font-size: 10px;
 	scroll-behavior: smooth;
-	
+	font-family: 'Varela Round', sans-serif;
+	box-sizing: border-box;
 }
 
 .nav-bar {
@@ -16,17 +17,16 @@ html {
 }
 
 .nav-bar::after {
-  position: absolute;
-  bottom: -50px;
-  left: 0px;
-  width: 100%;
-  content:" ";
-  background:
-  radial-gradient(circle at 50% 0%, #BD4B4B 25%, #EEEEEE 26%, #EEEEEE 40%);
-  background-color: #EEEEEE ;
-  background-size: 30px 100px;
-  height: 50px;
-  background-repeat: repeat-x;
+ 	 position: absolute;
+	  bottom: -50px;
+ 	 left: 0px;
+ 	 width: 100%;
+	  content:" ";
+ 	 background:
+ 	 radial-gradient(circle at 50% 0%, #BD4B4B 25%, #EEEEEE 26%, #EEEEEE 40%);
+ 	 background-color: #EEEEEE ;
+ 	 background-size: 30px 100px;
+ 	 height: 50px;
 }
 
 .cv-button {
@@ -34,7 +34,6 @@ html {
 	border-color: #B13126;
 	border-radius: 10px;
 	color: #000000;
-	font-family: 'Varela Round', sans-serif;
 	font-weight: bold;
 	font-size: 3rem;
 	padding: 15px;
@@ -43,14 +42,12 @@ html {
 .navigation-links {
 	color: #ffffff;
 	text-decoration: none;
-	font-family: 'Varela Round', sans-serif;
 	font-size: 3rem;
 }
 
 header {
 	background-color: #EEEEEE;
 	height: 90vh;
-	font-family: 'Varela Round', sans-serif;
 	color: #000000;
 }
 
@@ -91,7 +88,6 @@ header div h1 {
 
 .about-me-title {
 	padding-left: 30px;
-	font-family: 'Varela Round', sans-serif;
 	font-size: 3rem;
 	color: #ffffff;
 }
@@ -99,7 +95,6 @@ header div h1 {
 .about-me-text {
 	padding-left: 30px;
 	padding-bottom: 30px;
-	font-family: 'Varela Round', sans-serif;
 	font-size: 2rem;
 	color: #ffffff;
 }
@@ -120,7 +115,6 @@ header div h1 {
 	display:flex;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Varela Round', sans-serif;
 	font-size: 3rem;
 	padding-top: 50px;
 	padding-bottom: 75px;
@@ -134,13 +128,12 @@ header div h1 {
 	justify-content: center;
 	gap: 30px;
 	padding-top: 30px;
-	font-family: 'Varela Round', sans-serif;
 	font-weight: bold;
 	color: #2a2e32;
 	font-size: 2rem;
 }
 
-.portfolio-child {
+.portfolio-item {
 	border-style: dotted;
 	border-color: #000000;
 	border-width: 5px;
@@ -165,7 +158,6 @@ footer {
 }
 
 footer h3 {
-	font-family: 'Varela Round', sans-serif;
 	font-size: 3rem;
 	padding-top: 40px;
 	padding-left: 10px;
