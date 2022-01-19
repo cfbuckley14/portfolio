@@ -1,6 +1,7 @@
 html {
 	font-size: 10px;
 	scroll-behavior: smooth;
+	
 }
 
 .nav-bar {
@@ -49,12 +50,11 @@ html {
 header {
 	background-color: #EEEEEE;
 	height: 90vh;
-	flex-direction: column;
 	font-family: 'Varela Round', sans-serif;
 	color: #000000;
 }
 
-header div h1 {
+header div span {
 	font-size: 6rem;
 	display:flex;
 	align-items: center;
@@ -69,7 +69,7 @@ header div h1 {
 	display: inline;
 }
 
-header div h2 {
+header div h1 {
 	font-size: 11rem;
 	margin: 0;
 	display:flex;
@@ -186,64 +186,41 @@ footer h3 {
 	
 }
 
-
 @media screen and (max-width: 600px) {
 	.cv-button {
 	flex-direction: column;
 	font-size: 2rem;
 	}
-}
-
-@media screen and (max-width: 600px) {
 	.navigation-links {
 	font-size: 2rem;
 	}
-}
-
-@media screen and (max-width: 600px) {
 	header {
 	flex-direction: column;
 	height: auto;
 	}
-}
-
-@media screen and (max-width: 600px) {
-	header div h1 {
+	header div span {
 	font-size: 4rem;
 	}
-}
-
-@media screen and (max-width: 600px) {
-	header div h2 {
+	header div h1 {
 	font-size: 7rem;
 	}
-}
-
-@media screen and (max-width: 600px) {
 	.about-section {
 		flex-direction: column;
 		height: auto;
 	}
-}
-
+	footer h3 {
+	font-size: 2rem;
+	height: auto;
+	}
+	
 @media screen and (max-width: 850px) {
 	.portfolio-section {
 	flex-direction: column;
 	height: auto;
 	}
-}
-
-@media screen and (max-width: 850px) {
 	.portfolio-parent {
 	flex-direction: column;
 	height: auto;
 	font-size: 1.5rem;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	footer h3 {
-	font-size: 2rem;
-	height: auto;
 	}
 }
