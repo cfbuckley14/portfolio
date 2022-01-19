@@ -212,7 +212,7 @@ footer h3 {
 	font-size: 2rem;
 	height: auto;
 	}
-	
+}	
 @media screen and (max-width: 850px) {
 	.portfolio-section {
 	flex-direction: column;
