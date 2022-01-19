@@ -1,9 +1,7 @@
 html {
 	font-size: 10px;
+	scroll-behavior: smooth;
 }
-
-
-/*navigation*/
 
 .nav-bar {
 	position: relative;
@@ -41,13 +39,6 @@ html {
 	padding: 15px;
 }
 
-@media screen and (max-width: 600px) {
-	.cv-button {
-	flex-direction: column;
-	font-size: 2rem;
-	}
-}
-
 .navigation-links {
 	color: #ffffff;
 	text-decoration: none;
@@ -55,17 +46,7 @@ html {
 	font-size: 3rem;
 }
 
-@media screen and (max-width: 600px) {
-	.navigation-links {
-	font-size: 2rem;
-	}
-}
-
-/*navigation*/
-
-/*welcome*/
-
-.welcome-banner {
+header {
 	background-color: #EEEEEE;
 	height: 90vh;
 	flex-direction: column;
@@ -73,25 +54,14 @@ html {
 	color: #000000;
 }
 
-@media screen and (max-width: 600px) {
-	.welcome-banner {
-	flex-direction: column;
-	}
-}
-
-.small-title {
+header div h1 {
 	font-size: 6rem;
 	display:flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	padding-top: 10%;
 	margin-bottom: 0;
-}
-
-@media screen and (max-width: 600px) {
-	.small-title {
-	font-size: 4rem;
-	}
 }
 
 .sparkle-inline {
@@ -99,25 +69,15 @@ html {
 	display: inline;
 }
 
-.large-title {
+header div h2 {
 	font-size: 11rem;
 	margin: 0;
 	display:flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
+	padding-bottom: 150px;
 }
-
-@media screen and (max-width: 600px) {
-	.large-title {
-	font-size: 7rem;
-	}
-}
-
-/*come back to this once looked at mobile formatting*/
-
-/*welcome*/
-
-/*about me*/
 
 .about-section {
 	background-color: #BD4B4B;
@@ -133,6 +93,7 @@ html {
 	padding-left: 30px;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 3rem;
+	color: #ffffff;
 }
 
 .about-me-text {
@@ -140,6 +101,7 @@ html {
 	padding-bottom: 30px;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 2rem;
+	color: #ffffff;
 }
 
 .profile-photo {
@@ -147,10 +109,6 @@ html {
 	height: auto;
 	border-radius: 10%;
 }
-
-/*about me*/
-
-/*portfolio*/
 
 .portfolio-section {
 	background-color: #EEEEEE;
@@ -167,9 +125,10 @@ html {
 	padding-top: 50px;
 	padding-bottom: 75px;
 	margin: 0;
+	height: auto;
 }
 
-.container {
+.portfolio-parent {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -179,18 +138,9 @@ html {
 	font-weight: bold;
 	color: #2a2e32;
 	font-size: 2rem;
-	height: 40vh;
 }
 
-@media screen and (max-width: 600px) {
-	.container {
-	flex-direction: column;
-	font-size: 1.5rem;
-	padding-top: 50px;
-	}
-}
-
-.dotted-border {
+.portfolio-child {
 	border-style: dotted;
 	border-color: #000000;
 	border-width: 5px;
@@ -204,19 +154,17 @@ html {
 }
 
 .under-construction {
-	width: 40%;
+	width: 150px;
 }
-
-/*portfolio*/
-
-/*footer*/
 
 footer {
 	background-color: #BD4B4B;
 	height: 3-vh;
+	color: #ffffff;
+	text-decoration: none;
 }
 
-.footer-text {
+footer h3 {
 	font-family: 'Varela Round', sans-serif;
 	font-size: 3rem;
 	padding-top: 40px;
@@ -224,15 +172,10 @@ footer {
 	margin: 0;
 }
 
-@media screen and (max-width: 600px) {
-	.footer-text {
-	font-size: 2rem;
-	}
-}
-
 .social-icons {
-	width: 5%;
+	width: 90px;
 	padding: 7px;
+	text-decoration: none;
 }
 
 
@@ -243,4 +186,64 @@ footer {
 	
 }
 
-/*footer*/
+
+@media screen and (max-width: 600px) {
+	.cv-button {
+	flex-direction: column;
+	font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.navigation-links {
+	font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header {
+	flex-direction: column;
+	height: auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header div h1 {
+	font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header div h2 {
+	font-size: 7rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.about-section {
+		flex-direction: column;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.portfolio-section {
+	flex-direction: column;
+	height: auto;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.portfolio-parent {
+	flex-direction: column;
+	height: auto;
+	font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	footer h3 {
+	font-size: 2rem;
+	height: auto;
+	}
+}
