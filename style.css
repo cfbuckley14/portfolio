@@ -1,5 +1,7 @@
 html {
 	font-size: 10px;
+	scroll-behavior: smooth;
+	
 }
 
 .nav-bar {
@@ -10,19 +12,20 @@ html {
 	gap: 30px;
 	background-color: #BD4B4B;
 	padding: 20px;
+	flex-wrap: wrap;
 }
 
-.nav-bar::after { 
-  position:absolute;
+.nav-bar::after {
+  position: absolute;
   bottom: -50px;
   left: 0px;
   width: 100%;
   content:" ";
-  background: 
+  background:
   radial-gradient(circle at 50% 0%, #BD4B4B 25%, #EEEEEE 26%, #EEEEEE 40%);
-  background-color: #150B0E ;
-  background-size:40px 100px;
-  height:50px;
+  background-color: #EEEEEE ;
+  background-size: 30px 100px;
+  height: 50px;
   background-repeat: repeat-x;
 }
 
@@ -37,115 +40,79 @@ html {
 	padding: 15px;
 }
 
-.welcome-banner {
-	background-color: #EEEEEE;
-	height: 90vh;
-	
-}
-
 .navigation-links {
 	color: #ffffff;
 	text-decoration: none;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 3rem;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #2866c9;
 }
 
-.hi-there-welcome-text {
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 6rem;
-	padding-top: 10%;
-	color: #000000;
-	/*deciding whether to keep element*/
-/*    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #EFB7B7;*/
-}
-
-.welcome-text { 
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 11rem;
+header {
 	background-color: #EEEEEE;
-	margin: 0;
+	height: 90vh;
+	font-family: 'Varela Round', sans-serif;
 	color: #000000;
-/*deciding whether to keep element*/
-/*	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: #EFB7B7;*/
 }
 
-.about-me-title {
+header div span {
+	font-size: 6rem;
 	display:flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 0;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 3rem;
+	text-align: center;
+	padding-top: 10%;
+	margin-bottom: 0;
 }
 
-.scallop-mid-section {
+.sparkle-inline {
+	width: 10% ;
+	display: inline;
+}
+
+header div h1 {
+	font-size: 11rem;
+	margin: 0;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 150px;
+}
+
+.about-section {
 	background-color: #BD4B4B;
 	padding: 50px;
 	height: 100vh;
-	position: relative;
-	
-}
-.about-me-text {
-	display: row;
+	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: auto;
-	width: 25%;
-	padding-top: 0;
+	gap: 50px;
+}
+
+.about-me-title {
+	padding-left: 30px;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 3rem;
+	color: #ffffff;
+}
+
+.about-me-text {
+	padding-left: 30px;
 	padding-bottom: 30px;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 2rem;
+	color: #ffffff;
 }
 
 .profile-photo {
-	width: 15%;
-	margin: auto;
-	border-radius: 25%;
-	display: flex;
+	width: 200px;
+	height: auto;
+	border-radius: 10%;
 }
-
-/*deciding whether I want to add scallops or not, so keep not to re-write*/
-
-/*.scallop-mid-section::before {
-  position:absolute;
-  top: -5px;
-  left: 0px;
-  width: 100%;
-  content:" ";
-  background:
-  radial-gradient(circle at 50% 0%, white 25%, #5496ff 26%, #5496ff 40%);
-  background-color: white ;
-  background-size:40px 100px;
-  height:50px;
-  background-repeat: repeat-x;
-}
-
-.scallop-mid-section::after {
-  position:absolute;
-/*  top: 50px;*/
-/*  left: 0px;
-  width: 100%;
-  content:" ";
-  background:
-  radial-gradient(circle at 50% 0%, #5496ff 25%, white 26%, white 40%);
-  background-color: #5496ff ;
-  background-size:40px 100px;
-  height:50px;
-  background-repeat: repeat-x;
-}*/*/
 
 .portfolio-section {
 	background-color: #EEEEEE;
+	padding: 50px;
 	height: 100vh;
 }
 
@@ -155,28 +122,25 @@ html {
 	justify-content: center;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 3rem;
+	padding-top: 50px;
+	padding-bottom: 75px;
+	margin: 0;
+	height: auto;
 }
 
-.container {
+.portfolio-parent {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 30px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 30px;
 	font-family: 'Varela Round', sans-serif;
 	font-weight: bold;
 	color: #2a2e32;
 	font-size: 2rem;
-	height: 40vh;
 }
 
-footer {
-	background-color: #BD4B4B;
-	height: 20vh;
-}
-
-.dotted-border {
+.portfolio-child {
 	border-style: dotted;
 	border-color: #000000;
 	border-width: 5px;
@@ -189,13 +153,74 @@ footer {
 	padding-bottom: 50px;
 }
 
-.footer-text {
+.under-construction {
+	width: 150px;
+}
+
+footer {
+	background-color: #BD4B4B;
+	height: 3-vh;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+footer h3 {
 	font-family: 'Varela Round', sans-serif;
 	font-size: 3rem;
 	padding-top: 40px;
 	padding-left: 10px;
+	margin: 0;
 }
 
 .social-icons {
-	width: 5%;
+	width: 90px;
+	padding: 7px;
+	text-decoration: none;
+}
+
+
+.copywright {
+	font-size: 2rem;
+	padding-left: 20px;
+	margin: 0;
+	
+}
+
+@media screen and (max-width: 600px) {
+	.cv-button {
+	flex-direction: column;
+	font-size: 2rem;
+	}
+	.navigation-links {
+	font-size: 2rem;
+	}
+	header {
+	flex-direction: column;
+	height: auto;
+	}
+	header div span {
+	font-size: 4rem;
+	}
+	header div h1 {
+	font-size: 7rem;
+	}
+	.about-section {
+		flex-direction: column;
+		height: auto;
+	}
+	footer h3 {
+	font-size: 2rem;
+	height: auto;
+	}
+	
+@media screen and (max-width: 850px) {
+	.portfolio-section {
+	flex-direction: column;
+	height: auto;
+	}
+	.portfolio-parent {
+	flex-direction: column;
+	height: auto;
+	font-size: 1.5rem;
+	}
 }
