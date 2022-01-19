@@ -11,7 +11,6 @@ html {
 	justify-content: center;
 	gap: 30px;
 	background-color: #BD4B4B;
-	padding: 20px;
 	flex-wrap: wrap;
 }
 
@@ -29,22 +28,15 @@ html {
   background-repeat: repeat-x;
 }
 
-.cv-button {
-	background-color: #ffffff;
-	border-color: #B13126;
-	border-radius: 10px;
-	color: #000000;
-	font-family: 'Varela Round', sans-serif;
-	font-weight: bold;
-	font-size: 3rem;
-	padding: 15px;
+nav img {
+	width: 175px;
 }
 
 .navigation-links {
 	color: #ffffff;
 	text-decoration: none;
 	font-family: 'Varela Round', sans-serif;
-	font-size: 3rem;
+	font-size: 3.5rem;
 }
 
 header {
@@ -79,6 +71,26 @@ header div h1 {
 	padding-bottom: 150px;
 }
 
+.back-to-top {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
+header div a {
+	background-color: #EFB7B7;
+	color: #000000;
+	font-size: 2rem;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 5px;
+	border-style: double;
+	border-width: 3px;
+	position: fixed;
+	bottom: 10px;
+}
+
 .about-section {
 	background-color: #BD4B4B;
 	padding: 50px;
@@ -86,13 +98,13 @@ header div h1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 50px;
+	line-height: 1.2;
 }
 
 .about-me-title {
 	padding-left: 30px;
 	font-family: 'Varela Round', sans-serif;
-	font-size: 3rem;
+	font-size: 4rem;
 	color: #ffffff;
 }
 
@@ -100,14 +112,22 @@ header div h1 {
 	padding-left: 30px;
 	padding-bottom: 30px;
 	font-family: 'Varela Round', sans-serif;
-	font-size: 2rem;
+	font-size: 3rem;
+	color: #ffffff;
+	width: 75%;
+	margin: 0;
+}
+
+.about-me-text a{
+	text-decoration: wavy underline;	
+	font-size: 3rem;
 	color: #ffffff;
 }
 
-.profile-photo {
-	width: 200px;
+.polaroid-photos {
+	width: 500px;
 	height: auto;
-	border-radius: 10%;
+	padding-right: 50px;
 }
 
 .portfolio-section {
@@ -121,7 +141,7 @@ header div h1 {
 	align-items: center;
 	justify-content: center;
 	font-family: 'Varela Round', sans-serif;
-	font-size: 3rem;
+	font-size: 4rem;
 	padding-top: 50px;
 	padding-bottom: 75px;
 	margin: 0;
@@ -140,7 +160,7 @@ header div h1 {
 	font-size: 2rem;
 }
 
-.portfolio-child {
+.portfolio-item {
 	border-style: dotted;
 	border-color: #000000;
 	border-width: 5px;
@@ -192,7 +212,10 @@ footer h3 {
 	font-size: 2rem;
 	}
 	.navigation-links {
-	font-size: 2rem;
+	font-size: 2.5rem;
+	}
+	nav img {
+		width: 100px;
 	}
 	header {
 	flex-direction: column;
@@ -203,10 +226,6 @@ footer h3 {
 	}
 	header div h1 {
 	font-size: 7rem;
-	}
-	.about-section {
-		flex-direction: column;
-		height: auto;
 	}
 	footer h3 {
 	font-size: 2rem;
@@ -223,4 +242,23 @@ footer h3 {
 	height: auto;
 	font-size: 1.5rem;
 	}
+	.about-section {
+		flex-direction: column;
+		height: auto;
+	}
 }
+
+@media screen and (max-width: 1100px) {
+	.about-me-title {
+		font-size: 3rem;
+	}
+	.about-me-text {
+		font-size: 2rem;
+	}
+	.about-me-text a{
+		font-size: 2rem;
+	}
+	.polaroid-photos {
+		width: 350px;
+	}
+}	
