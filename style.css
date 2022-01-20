@@ -180,7 +180,7 @@ header div a {
 
 footer {
 	background-color: #BD4B4B;
-	height: 25vh;
+	min-height: 25vh;
 	color: #ffffff;
 	text-decoration: none;
 	padding: 10px;
