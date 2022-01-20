@@ -1,7 +1,8 @@
 html {
 	font-size: 10px;
 	scroll-behavior: smooth;
-	
+	font-family: 'Varela Round', sans-serif;
+	box-sizing: border-box;
 }
 
 .nav-bar {
@@ -15,19 +16,17 @@ html {
 }
 
 .nav-bar::after {
-  position: absolute;
-  bottom: -50px;
-  left: 0px;
-  width: 100%;
-  content:" ";
-  background:
-  radial-gradient(circle at 50% 0%, #BD4B4B 25%, #EEEEEE 26%, #EEEEEE 40%);
-  background-color: #EEEEEE ;
-  background-size: 30px 100px;
-  height: 50px;
-  background-repeat: repeat-x;
+ 	position: absolute;
+	bottom: -50px;
+ 	left: 0px;
+ 	width: 100%;
+	content:" ";
+ 	background:
+ 	radial-gradient(circle at 50% 0%, #BD4B4B 25%, #EEEEEE 26%, #EEEEEE 40%);
+ 	background-color: #EEEEEE ;
+ 	background-size: 30px 100px;
+ 	height: 50px;
 }
-
 nav img {
 	width: 175px;
 }
@@ -35,14 +34,12 @@ nav img {
 .navigation-links {
 	color: #ffffff;
 	text-decoration: none;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 3.5rem;
+	font-size: 3rem;
 }
 
 header {
 	background-color: #EEEEEE;
 	height: 90vh;
-	font-family: 'Varela Round', sans-serif;
 	color: #000000;
 	display: flex;
 	justify-content: center;
@@ -111,16 +108,14 @@ header div a {
 
 .about-me-title {
 	padding-left: 30px;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 4rem;
+	font-size: 3rem;
 	color: #ffffff;
 }
 
 .about-me-text {
 	padding-left: 30px;
 	padding-bottom: 30px;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: #ffffff;
 	width: 75%;
 	margin: 0;
@@ -153,32 +148,31 @@ header div a {
 	padding-top: 50px;
 	padding-bottom: 75px;
 	margin: 0;
-	height: auto;
+	display: flex;
+	justify-content: center;
 }
 
 .portfolio-parent {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 30px;
-	padding-top: 30px;
-	font-family: 'Varela Round', sans-serif;
+	display: grid;
+	gap: 50px;
+	grid-template-rows: 25%, 25%, 25%;
+	grid-template-columns: , 25%, 25%;
 	font-weight: bold;
 	color: #2a2e32;
 	font-size: 2rem;
 }
 
 .portfolio-item {
+	grid-row-start: 1;
+	justify-content: center;
+	align-items: center;
 	border-style: dotted;
 	border-color: #000000;
+	height: 100%;
+	width: 90%;
 	border-width: 5px;
-	width: 25%;
-	height: 75%;
 	border-radius: 10px;
-	padding-top: 10px;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-bottom: 50px;
+	padding: 10px;
 }
 
 .under-construction {
@@ -187,13 +181,12 @@ header div a {
 
 footer {
 	background-color: #BD4B4B;
-	height: 3-vh;
+	height: 25vh;
 	color: #ffffff;
 	text-decoration: none;
 }
 
 footer h3 {
-	font-family: 'Varela Round', sans-serif;
 	font-size: 3rem;
 	padding-top: 40px;
 	padding-left: 10px;
@@ -206,8 +199,7 @@ footer h3 {
 	text-decoration: none;
 }
 
-
-.copywright {
+.copyright {
 	font-size: 2rem;
 	padding-left: 20px;
 	margin: 0;
@@ -224,6 +216,7 @@ footer h3 {
 	}
 	nav img {
 		width: 100px;
+		font-size: 2rem;
 	}
 	header {
 		flex-direction: column;
@@ -259,8 +252,10 @@ footer h3 {
 		font-size: 1.5rem;
 	}
 	.about-section {
+		display: flex;
 		flex-direction: column;
 		height: auto;
+		font-size: 1.5rem;
 	}
 }
 
