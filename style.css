@@ -1,7 +1,6 @@
 html {
 	font-size: 10px;
 	scroll-behavior: smooth;
-	
 }
 
 .nav-bar {
@@ -11,7 +10,10 @@ html {
 	justify-content: center;
 	gap: 30px;
 	background-color: #BD4B4B;
-	flex-wrap: wrap;
+}
+
+.nav-bar div a {
+	padding: 30px;
 }
 
 .nav-bar::after {
@@ -79,7 +81,7 @@ header img {
 	left: 20px;
 }
 
-.back-to-top {
+.back-to-top-link {
 	display:flex;
 	align-items: center;
 	justify-content: center;
@@ -109,14 +111,14 @@ header div a {
 	line-height: 1.2;
 }
 
-.about-me-title {
+.about-section h2 {
 	padding-left: 30px;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 4rem;
 	color: #ffffff;
 }
 
-.about-me-text {
+.about-section p {
 	padding-left: 30px;
 	padding-bottom: 30px;
 	font-family: 'Varela Round', sans-serif;
@@ -126,7 +128,7 @@ header div a {
 	margin: 0;
 }
 
-.about-me-text a{
+.about-section a {
 	text-decoration: wavy underline;	
 	font-size: 3rem;
 	color: #ffffff;
@@ -144,7 +146,7 @@ header div a {
 	height: 100vh;
 }
 
-.portfolio-title {
+.portfolio-section h2 {
 	display:flex;
 	align-items: center;
 	justify-content: center;
@@ -181,7 +183,7 @@ header div a {
 	padding-bottom: 50px;
 }
 
-.under-construction {
+.project-card-image {
 	width: 150px;
 }
 
@@ -206,21 +208,26 @@ footer h3 {
 	text-decoration: none;
 }
 
+a {
+	text-decoration: none;
+}
 
 .copywright {
 	font-size: 2rem;
 	padding-left: 20px;
 	margin: 0;
-	
 }
 
 @media screen and (max-width: 600px) {
-	.cv-button {
+	.nav-bar div {
 		flex-direction: column;
-		font-size: 2rem;
+		justify-content: center;
+		align-text: center;
+		display: flex;
 	}
 	.navigation-links {
 		font-size: 2.5rem;
+		padding: 10px;
 	}
 	nav img {
 		width: 100px;
@@ -265,13 +272,16 @@ footer h3 {
 }
 
 @media screen and (max-width: 1100px) {
-	.about-me-title {
+	.about-section h2 {
 		font-size: 3rem;
 	}
-	.about-me-text {
+	.about-section h3 {
 		font-size: 2rem;
 	}
-	.about-me-text a{
+	.about-section p {
+		font-size: 2rem;
+	}
+	.about-section a {
 		font-size: 2rem;
 	}
 	.polaroid-photos {
